@@ -15,7 +15,9 @@
  var eusei = window.document.getElementById("eusei")
 function euseifazer() {  
     var e =  window.document.querySelector("input#tabom").value
-eusei.innerText = ` ${e} você foi cancelado(a) porque vc é feio(a) `  || `${e} vc foi cancelado por ser bonito(a)` 
+  var M =  Math.random(1, 2, 3, 4, 5, 6)
+ if (M == 1){eusei.innerText = ` ${e} você foi cancelado(a) porque vc é feio(a) `} 
+ if(M = 2){eusei.innerText = `${e} vc foi cancelado por ser bonito(a)`}
  if (e  == "" || null) { eusei.innerText = "nome não identificado"}
 
 
@@ -23,3 +25,4 @@ eusei.innerText = ` ${e} você foi cancelado(a) porque vc é feio(a) `  || `${e}
     </script>
 </body>
 </html>
+
